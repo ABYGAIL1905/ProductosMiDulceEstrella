@@ -13,6 +13,7 @@ import jakarta.persistence.JoinColumn;
 import jakarta.persistence.ManyToOne;
 import jakarta.persistence.Table;
 import java.io.Serializable;
+import java.sql.Blob;
 import lombok.Getter;
 import lombok.Setter;
 
@@ -30,8 +31,12 @@ public class Productos implements Serializable {
     @GeneratedValue(strategy = GenerationType.IDENTITY)
     @Column(name = "id_producto")
     private Long id_producto;
+    
      @Column(name = "codigo_producto")
     private String codigo_producto;
+     
+       @Column(name = "foto_producto")
+    private byte foto_producto;
     
      @Column(name = "nombre_producto")
     private String nombre_producto;
