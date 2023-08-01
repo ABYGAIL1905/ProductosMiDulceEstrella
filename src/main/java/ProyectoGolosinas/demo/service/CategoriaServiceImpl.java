@@ -4,10 +4,29 @@
  */
 package ProyectoGolosinas.demo.service;
 
+import ProyectoGolosinas.demo.entity.Categoria;
+
+import ProyectoGolosinas.demo.repository.ICategoriaRepository;
+
+import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.data.repository.CrudRepository;
+import org.springframework.stereotype.Service;
+
 /**
  *
  * @author daysi
  */
-public class CategoriaServiceImpl {
+@Service
+public class CategoriaServiceImpl extends GenericServiceImpl <Categoria, Long> implements ICategoriaService{
+
+    @Autowired
+    ICategoriaRepository caterep;
+
+    @Override
+    public CrudRepository<Categoria, Long> getDao() {
+        return  caterep;
+    }
     
-}
+   
+   
+  }

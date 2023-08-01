@@ -5,7 +5,7 @@
 package ProyectoGolosinas.demo.service;
 
 import ProyectoGolosinas.demo.entity.Categoria;
-import com.example.AbigailZhingriExamen.service.GenericService;
+
 
 /**
  *

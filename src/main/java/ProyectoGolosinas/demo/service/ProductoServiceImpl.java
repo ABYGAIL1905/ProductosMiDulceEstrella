@@ -6,10 +6,11 @@ package ProyectoGolosinas.demo.service;
 
 import ProyectoGolosinas.demo.entity.Productos;
 import ProyectoGolosinas.demo.repository.IProductoRepository;
-import com.example.AbigailZhingriExamen.service.GenericServiceImpl;
+
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.data.repository.CrudRepository;
 import org.springframework.stereotype.Service;
+
 
 /**
  *

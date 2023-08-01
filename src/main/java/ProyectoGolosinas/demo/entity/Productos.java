@@ -35,9 +35,9 @@ public class Productos implements Serializable {
      @Column(name = "codigo_producto")
     private String codigo_producto;
      
-       @Column(name = "foto_producto")
-    private byte foto_producto;
-    
+       @Column(name = "foto_producto",columnDefinition = "LONGBLOB")
+    private String foto_producto;
+   // igamen para la base de datos
      @Column(name = "nombre_producto")
     private String nombre_producto;
      
@@ -51,6 +51,9 @@ public class Productos implements Serializable {
        @Column(name = "precio_mayor3")
     private Double precio_mayor3;  
        
+       @Column(name = "precio_detallista")
+    private Double precio_detallista;  
+       
        
        @Column(name = "precio_venta_publico")
     private Double precio_venta_publico;
@@ -60,7 +63,14 @@ public class Productos implements Serializable {
     @JoinColumn(name = "id_categoria", referencedColumnName = "id_categoria")
  
     private Categoria categoria;
+     
+        @Column(name = "estado_producto")
+    private String estado_producto;
 
+    public Productos() {
+    }
+
+        
     public Productos(Long id_producto, String codigo_producto, String nombre_producto, int unidad_caja, Double precio_distribuidor, Double precio_mayor3, Double precio_venta_publico, Categoria categoria) {
         this.id_producto = id_producto;
         this.codigo_producto = codigo_producto;

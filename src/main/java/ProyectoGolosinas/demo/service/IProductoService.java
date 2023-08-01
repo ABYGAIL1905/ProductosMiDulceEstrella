@@ -5,9 +5,9 @@
 package ProyectoGolosinas.demo.service;
 
 import ProyectoGolosinas.demo.entity.Productos;
-import com.example.AbigailZhingriExamen.service.GenericService;
-import org.springframework.web.bind.annotation.RequestMapping;
-import org.springframework.web.bind.annotation.RestController;
+
+
+
 
 /**
  *

@@ -4,10 +4,13 @@
  */
 package ProyectoGolosinas.demo.repository;
 
+import ProyectoGolosinas.demo.entity.Categoria;
+import org.springframework.data.jpa.repository.JpaRepository;
+
 /**
  *
  * @author daysi
  */
-public interface ICategoriaRepository {
+public interface ICategoriaRepository extends JpaRepository<Categoria, Long>{
     
 }

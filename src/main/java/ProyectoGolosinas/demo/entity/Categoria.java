@@ -31,5 +31,8 @@ public class Categoria implements Serializable{
        
        @Column(name = "nombre_categoria")
     private String nombre_categoria;
+       
+       @Column(name = "descripcion_categoria")
+    private String descripcion_categoria;
     
 }
