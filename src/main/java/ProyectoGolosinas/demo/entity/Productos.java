@@ -36,7 +36,7 @@ public class Productos implements Serializable {
     private String codigo_producto;
      
        @Column(name = "foto_producto",columnDefinition = "LONGBLOB")
-    private String foto_producto;
+    private byte[] foto_producto;
    // igamen para la base de datos
      @Column(name = "nombre_producto")
     private String nombre_producto;
